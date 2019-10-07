@@ -8,7 +8,7 @@
 
 ### Information
 - [WebRTC API](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API)
-    - [RTCConfiguration](https://developer.mozilla.org/en-US/docs/Web/API/RTCConfiguration)
+    - [RTCConfiguration](https://developer.mozilla.org/en-US/docs/Web/API/RTCConfiguration) - RTCBundlePolicy, RTCIceTransportPolicy, RTCRtcpMuxPolicy
 
 
 ### Stackoverflow
