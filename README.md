@@ -9,12 +9,14 @@
 
 
 ### Information
-- [WebRTC API](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API)
+- [WebRTC Weekly](https://webrtcweekly.com/) - [Issue #295](https://webrtcweekly.com/issue/295/)
+- MDN [WebRTC API](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API)
     - [RTCConfiguration](https://developer.mozilla.org/en-US/docs/Web/API/RTCConfiguration) - RTCBundlePolicy, RTCIceTransportPolicy, RTCRtcpMuxPolicy
     - [RTCRtpTransceiver](https://developer.mozilla.org/en-US/docs/Web/API/RTCRtpTransceiver) - a permanent pairing of an RTCRtpSender and an RTCRtpReceiver, along with some shared state
 - [Advancing WebRTC](https://blog.mozilla.org/webrtc/)
 - [W3C WebRTC WG Meeting](https://www.w3.org/2011/04/webrtc/wiki/Main_Page)
     - [2019/07/02](https://docs.google.com/presentation/d/1xcvf0udNeSH7s1FOY7RRqr1dEFvokZjn-MZPjwy3iXQ/edit#slide=id.p)
+
 
 ### Stackoverflow
 - [WebRTC: Relationship between Channels, Tracks & Streams vis-a-vis RTP SSRC and RTP Sessions](https://stackoverflow.com/questions/53673672/webrtc-relationship-between-channels-tracks-streams-vis-a-vis-rtp-ssrc-and-r)
