@@ -1,0 +1,55 @@
+<html>
+<body>
+<video autoplay muted></video>
+<img>
+<input type="range" hidden>
+</body>
+
+<script>
+var imageCapture;
+
+navigator.mediaDevices.getUserMedia({video: true})
+    .then(gotMedia)
+    .catch(err => console.error('getUserMedia() failed: ', err));
+
+function gotMedia(mediastream) {
+    const video = document.querySelector('video');
+    video.srcObject = mediastream;
+
+    const track = mediastream.getVideoTracks()[0];
+    imageCapture = new ImageCapture(track);
+
+    const capabilities = track.getCapabilities()
+    // Check whether zoom is supported or not.
+    if (!capabilities.zoom) {
+        console.log("zoom not supported")
+        // document.body.innerHTML = "zoom not supported</br>"
+        return;
+    }
+
+    // Map zoom to a slider element.
+    const input = document.querySelector('input[type="range"]');
+    input.min = capabilities.zoom.min;
+    input.max = capabilities.zoom.max;
+    input.step = capabilities.zoom.step;
+    input.value = track.getSettings().zoom;
+
+    input.oninput = function(event) {
+        track.applyConstraints({advanced : [{zoom: event.target.value}] });
+    }
+    input.hidden = false;
+}
+
+function takePhoto() {
+    imageCapture.takePhoto()
+        .then(blob => {
+        console.log('Photo taken: ' + blob.type + ', ' + blob.size + 'B');
+
+        const image = document.querySelector('img');
+        image.src = URL.createObjectURL(blob);
+        })
+        .catch(err => console.error('takePhoto() failed: ', err));
+}
+</script>
+
+</html>

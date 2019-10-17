@@ -1,0 +1,57 @@
+<html>
+<body>
+<video autoplay muted></video>
+<div>imageCapture.takePhoto() on img<br>
+<img id="imgPhoto">
+</div>
+<div>
+imageCapture.grabFrame() on canvas<br>
+<canvas id="imgFrame"></canvas>
+</div>
+</body>
+
+<script>
+var imageCapture;
+
+navigator.mediaDevices.getUserMedia({video: true})
+    .then(gotMedia)
+    .catch(err => console.error('getUserMedia() failed: ', err));
+
+function gotMedia(mediastream) {
+    const video = document.querySelector('video');
+    video.srcObject = mediastream;
+
+    const track = mediastream.getVideoTracks()[0];
+    var imageCapture = new ImageCapture(track);
+    if (imageCapture) {
+        imageCapture.takePhoto().then(processPhoto).catch(stopCamera);
+        imageCapture.grabFrame().then(processFrame).catch(stopCamera);
+    }
+}
+
+function stopCamera(err) {
+    console.log("stopCamera: ", err)
+    track.stop()
+}
+
+function processPhoto(blob) {
+    console.log('processPhoto: ' + blob.type + ', ' + blob.size + 'B');
+    const photo = document.getElementById('imgPhoto');
+    photo.src = URL.createObjectURL(blob);
+}
+
+function processFrame(image) {
+    console.log("processFrame", image)
+    const canvas = document.getElementById('imgFrame');
+    const ctx = canvas.getContext('2d');
+    canvas.width = image.width;
+    canvas.height = image.height;
+    ctx.drawImage(image, 0, 0);
+
+    // const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+    // --- process imageData
+    // // ctx.putImageData(imageData, 0, 0);
+}
+</script>
+
+</html>

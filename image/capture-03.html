@@ -1,0 +1,46 @@
+<html>
+<body>
+<canvas></canvas>
+</body>
+
+<script>
+const canvas = document.querySelector('canvas');
+
+var track;
+
+navigator.mediaDevices.getUserMedia({video: true})
+  .then(gotMedia)
+  .catch(err => console.error('getUserMedia() failed: ', err));
+
+function gotMedia(mediastream) {
+  track = mediastream.getVideoTracks()[0];
+  var imageCapture = new ImageCapture(track);
+  imageCapture.grabFrame()
+    .then(processFrame)
+    .catch(err => console.error('grabFrame() failed: ', err));
+}
+
+function processFrame(imageBitmap) {
+  // track.stop();
+
+  // |imageBitmap| pixels are not directly accessible: we need to paint
+  // the grabbed frame onto a <canvas>, then getImageData() from it.
+  const ctx = canvas.getContext('2d');
+  canvas.width = imageBitmap.width;
+  canvas.height = imageBitmap.height;
+  ctx.drawImage(imageBitmap, 0, 0);
+
+  // Read back the pixels from the <canvas>, and invert the colors.
+  const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+
+  var data = imageData.data;
+  for (var i = 0; i < data.length; i += 4) {
+    data[i]     = 255 - data[i];     // red
+    data[i + 1] = 255 - data[i + 1]; // green
+    data[i + 2] = 255 - data[i + 2]; // blue
+  }
+  // Finally, draw the inverted image to the <canvas>
+  ctx.putImageData(imageData, 0, 0);
+}
+</script>
+</html>

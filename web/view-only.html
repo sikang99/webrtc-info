@@ -80,7 +80,7 @@ function playStream(videoElement, hostname, port, path, configuration, reportErr
 
 window.onload = function() { 
     var vidstream = document.getElementById("stream"); 
-    var config = { 'iceServers': [{ 'urls': 'stun:stun.stunprotocol.org' }] }; 
+    var config = { 'iceServers': [{ 'urls': 'stun:stun.stunprotocol.org:3478' }] }; 
     playStream(vidstream, null, null, null, config, function (errmsg) { console.error(errmsg); });
 };
 </script>
