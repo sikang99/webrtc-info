@@ -6,6 +6,8 @@
 
 
 ### History
+- 2019/10/01 [Why is getDisplayMedia’s audio quality so bad?](https://medium.com/playspacetv/why-is-getdisplaymedias-audio-quality-so-bad-b49ba9cfaa83)
+    
 - 2019/09/17 [Stream high-quality real-time graphics through your browser with our new WebRTC framework](https://blogs.unity3d.com/kr/2019/09/17/stream-high-quality-real-time-graphics-through-your-browser-with-our-new-webrtc-framework/)
     - [Unity-Technologies/com.unity.webrtc](https://github.com/Unity-Technologies/com.unity.webrtc)
 - 2019/04/09 [The State of WebRTC and Low-Latency Streaming 2019](https://www.streamingmedia.com/Articles/Editorial/Featured-Articles/The-State-of-WebRTC-and-Low-Latency-Streaming-2019-131270.aspx)
