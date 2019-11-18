@@ -49,3 +49,7 @@
 - [microsoft/MixedReality-WebRTC](https://github.com/microsoft/MixedReality-WebRTC) - MixedReality-WebRTC is a collection of components to help mixed reality app developers integrate audio and video real-time communication into their application and improve their collaborative experience
 
 
+### Slides
+- 2019 [Beyond the WebRTC.org monoculture](https://archive.fosdem.org/2019/schedule/event/beyond_webrtc_monoculture/attachments/slides/3219/export/events/attachments/beyond_webrtc_monoculture/slides/3219/Beyond_the_WebRTC_org_monoculture.pdf)
+
+
