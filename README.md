@@ -34,6 +34,7 @@
     - [2019/07/02](https://docs.google.com/presentation/d/1xcvf0udNeSH7s1FOY7RRqr1dEFvokZjn-MZPjwy3iXQ/edit#slide=id.p)
 - Google Groups: [discuss-webrtc]( https://groups.google.com/forum/#!forum/discuss-webrtc)
 - GoDot Docs: [WebRTC](https://docs.godotengine.org/en/latest/tutorials/networking/webrtc.html)
+- [Webrtc tutorial](https://www.academia.edu/35978046/Webrtc_tutorial)
 
 
 ### Stackoverflow
