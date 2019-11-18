@@ -19,6 +19,11 @@
 - 2017/06/05 [The evolution of WebRTC 1.0](https://blog.mozilla.org/webrtc/the-evolution-of-webrtc/)
 
 
+### History (Japan)
+- 2019/11/11 [Microsoft EdgeのWebRTC対応について調査した](https://qiita.com/yusuke84/items/c96fdd751966a68f469c)
+
+
+
 ### Information
 - [WebRTC Weekly](https://webrtcweekly.com/) - [Issue #295](https://webrtcweekly.com/issue/295/)
 - MDN [WebRTC API](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API)

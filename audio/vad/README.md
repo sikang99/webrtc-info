@@ -7,5 +7,7 @@ Vocie Activity Detection (VAD)
 
 
 ### Open Source
+- [wiseman/py-webrtcvad](https://github.com/wiseman/py-webrtcvad) - Python interface to the WebRTC Voice Activity Detector
+
 
 
