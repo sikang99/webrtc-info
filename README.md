@@ -53,3 +53,8 @@
 - 2019 [Beyond the WebRTC.org monoculture](https://archive.fosdem.org/2019/schedule/event/beyond_webrtc_monoculture/attachments/slides/3219/export/events/attachments/beyond_webrtc_monoculture/slides/3219/Beyond_the_WebRTC_org_monoculture.pdf)
 
 
+### Papers
+- 2013 [Handling Packet Loss in WebRTC](https://static.googleusercontent.com/media/research.google.com/ko//pubs/archive/41611.pdf)
+
+
+
