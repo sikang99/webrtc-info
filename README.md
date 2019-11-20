@@ -36,6 +36,7 @@
 - GoDot Docs: [WebRTC](https://docs.godotengine.org/en/latest/tutorials/networking/webrtc.html)
 - [Webrtc tutorial](https://www.academia.edu/35978046/Webrtc_tutorial)
 - W3C [TPAC wiki](https://www.w3.org/wiki/TPAC)
+- Medium for [Millicast](https://medium.com/millicast)
 
 
 ### Stackoverflow
@@ -54,6 +55,7 @@
 
 
 ### Papers
+- 2019 [Performance Analysis of WebRTC and SIP for Video Conferencing](https://www.ijitee.org/wp-content/uploads/papers/v8i9S/I11090789S19.pdf)
 - 2013 [Handling Packet Loss in WebRTC](https://static.googleusercontent.com/media/research.google.com/ko//pubs/archive/41611.pdf)
 
 
