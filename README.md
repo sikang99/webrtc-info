@@ -28,6 +28,7 @@
 
 ### Specification: W3C
 - [WebRTC Priority Control API](https://www.w3.org/TR/webrtc-priority/), W3C Working Draft, 23 January 2020
+- [WebTransport](https://wicg.github.io/web-transport/), Draft Community Group Report, 19 December 2019 - QUIC
 
 
 ### Specification: IETF
